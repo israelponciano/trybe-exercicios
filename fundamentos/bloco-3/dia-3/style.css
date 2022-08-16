@@ -1,15 +1,34 @@
-p, h1{
-    text-align: center;
+body{
+    background-color: gray;
+}
+div:hover {
+    border: 1px solid black;
 }
 
-ol li:hover{
-    background-color: teal;
+/* h3{
+    font-style: italic;
+} */
+.divh3{
+    font-style: italic;
 }
 
-ol li:active{
-    font-family: monospace;
+.div1{
+    color: red;
 }
 
-ol, ul{
-    list-style: none;
+.div2{
+    color: blue;
+}
+
+.div3{
+    height: 6em;
+    color: green;
+}
+
+.div4{
+    color: yellow;
+}
+
+#div5{
+    color: magenta;
 }

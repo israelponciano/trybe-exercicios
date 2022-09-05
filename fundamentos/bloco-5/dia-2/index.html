@@ -1,0 +1,66 @@
+<main id="paiDoPai">
+    <section id="pai">
+      <section id="primeiroFilho"></section>
+      <section id="elementoOndeVoceEsta">
+        <section id="primeiroFilhoDoFilho"></section>
+        <section id="segundoEUltimoFilhoDoFilho"></section>
+      </section>
+      Atenção!
+      <section id="terceiroFilho"></section>
+      <section id="quartoEUltimoFilho"></section>
+
+      <section id="cars">
+        <div>
+          Skyline GT-R R34  
+        </div>
+     </section>
+
+     <div id="stark_childs">
+        <h2>Jon Snow</h2>
+        <h2>Sansa Stark</h2>
+        <h2>Bran Stark</h2>
+        <h2>Tony Stark</h2>
+        <h2>Arya Stark</h2>
+      </div>
+    
+
+    </section>
+    <script>
+        console.log(document.getElementById('elementoOndeVoceEsta'));
+        console.log(document.getElementById('elementoOndeVoceEsta').parentNode.style.backgroundColor = 'gold');
+        document.getElementById('elementoOndeVoceEsta').firstElementChild.innerText = 'abdce';
+        console.log(document.getElementById('pai').firstElementChild);
+        console.log(document.getElementById('elementoOndeVoceEsta').nextSibling);
+        console.log(document.getElementById('elementoOndeVoceEsta').nextElementSibling);
+        console.log(document.getElementById('pai').lastElementChild.previousElementSibling);
+
+        let pai = document.getElementById('pai');
+        let irmaoOndeEstou = document.createElement('section');
+        pai.appendChild(irmaoOndeEstou);
+
+        let ondeEstou = document.getElementById('elementoOndeVoceEsta');
+        let filhoOndeEstou = document.createElement('section');
+        ondeEstou.appendChild(filhoOndeEstou);
+
+        let primogenitoPrimeiroFilho = document.getElementById('primeiroFilhoDoFilho');
+        let filhoFilhoFilho = document.createElement('section');
+        primogenitoPrimeiroFilho.appendChild(filhoFilhoFilho);
+        
+        document.getElementById('primeiroFilhoDoFilho').firstElementChild.id = 'netinho';
+        console.log(document.getElementById('netinho').parentNode.parentNode.nextElementSibling);
+
+        let ultimoFilho = document.getElementById('pai').lastElementChild;
+        let quartoFilho = document.getElementById('quartoEUltimoFilho');
+        let terceiroFilho = document.getElementById('terceiroFilho');
+        let textoAtencao = ondeEstou.nextSibling;
+        pai.removeChild(ultimoFilho);
+        pai.removeChild(quartoFilho);
+        pai.removeChild(terceiroFilho);
+        pai.removeChild(textoAtencao);
+
+        document.getElementById('cars').firstElementChild.remove();
+
+        console.log(document.getElementById('stark_childs').lastElementChild.innerText);
+        document.createElement('p').clas
+    </script>
+</main>
